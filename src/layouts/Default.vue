@@ -41,6 +41,17 @@
               Account
             </a>
           </router-link>
+          <!-- para ver posts -->
+          <router-link
+            :to="{ name: 'posts.index' }"
+            active-class="active"
+            class="nav-item"
+            tag="li"
+          >
+            <a class="nav-link">
+              Posts
+            </a>
+          </router-link>
         </ul>
         <span class="navbar-text">
           <a

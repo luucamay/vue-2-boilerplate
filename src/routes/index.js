@@ -55,6 +55,16 @@ export default [
   },
 
   {
+    path: '/posts',
+    name: 'posts.index',
+    component: () => import('@/views/Posts/Index.vue'),
+    meta: {
+      auth: true,
+      guest: false,
+    },
+  },
+
+  {
     path: '/',
     redirect: '/home',
   },
